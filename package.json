@@ -1,0 +1,12 @@
+{
+    "name": "tori-scraper",
+    "version": "1.0.0",
+    "description": "A simple web scraper for Tori.fi",
+    "scripts": {
+        "install": "pip install -r requirements.txt -t ./lib && cd frontend && npm install",
+        "build": "cd frontend && npm run build",
+        "start": "python3 main.py",
+        "bstart": "npm run build && npm run start",
+        "kickstart": "npm run install && npm run bstart"
+    }
+}
